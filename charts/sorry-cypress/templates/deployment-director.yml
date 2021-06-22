@@ -86,6 +86,10 @@ spec:
               key: "secretkey"
         - name: MINIO_ENDPOINT
           value: {{ .Values.minio.endpoint }}
+        - name: MINIO_PORT
+          value: {{ .Values.minio.port }}
+        - name: MINIO_USESSL
+          value: {{ .Values.minio.useSsl }}
         - name: MINIO_URL
           value: {{ .Values.minio.url }}
         {{- end }}
